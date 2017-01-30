@@ -3,7 +3,7 @@
     {
       "size" : "24x24",
       "idiom" : "watch",
-      "filename" : "Weather-38mmNC.png",
+      "filename" : "Apple Watch NC38mm@2x.png",
       "scale" : "2x",
       "role" : "notificationCenter",
       "subtype" : "38mm"
@@ -11,7 +11,7 @@
     {
       "size" : "27.5x27.5",
       "idiom" : "watch",
-      "filename" : "Weather-42mmNC.png",
+      "filename" : "Apple Watch NC42mm@2x.png",
       "scale" : "2x",
       "role" : "notificationCenter",
       "subtype" : "42mm"
@@ -19,21 +19,21 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "Weather-CS@2x.png",
+      "filename" : "Apple Watch CS@2X.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "Weather-CS@3x.png",
+      "filename" : "Apple Watch CS@3X.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "watch",
-      "filename" : "Weather-HS@2x.png",
+      "filename" : "Apple Watch HS@2x.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"
@@ -41,7 +41,7 @@
     {
       "size" : "86x86",
       "idiom" : "watch",
-      "filename" : "Weather-SL38mm.png",
+      "filename" : "Apple Watch SL38mm@2x.png",
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "38mm"
@@ -49,7 +49,7 @@
     {
       "size" : "98x98",
       "idiom" : "watch",
-      "filename" : "Weather-SL42mm.png",
+      "filename" : "Apple Watch SL42mm@3X.png",
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
