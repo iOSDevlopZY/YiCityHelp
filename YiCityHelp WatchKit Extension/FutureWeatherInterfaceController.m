@@ -72,19 +72,27 @@
     
                 
             }else{
-                WKAlertAction *action=[WKAlertAction actionWithTitle:@"好的" style:WKAlertActionStyleDefault handler:^{
-                    
-                }];
-                NSString *error=[NSString stringWithFormat:@"错误代码：%@",dict[@"reason"]];
-                [self presentAlertControllerWithTitle:@"抱歉" message:error preferredStyle:WKAlertControllerStyleAlert actions:@[action]];
+                static dispatch_once_t onceToken;
+                dispatch_once(&onceToken, ^{
+                    WKAlertAction *action=[WKAlertAction actionWithTitle:@"好的" style:WKAlertActionStyleDefault handler:^{
+                        
+                    }];
+                    NSString *error=[NSString stringWithFormat:@"错误代码：%@",dict[@"reason"]];
+                    [self presentAlertControllerWithTitle:@"抱歉" message:error preferredStyle:WKAlertControllerStyleAlert actions:@[action]];
+                });
+               
             }
         }
         else
         {
-            WKAlertAction *action=[WKAlertAction actionWithTitle:@"好的" style:WKAlertActionStyleDefault handler:^{
-                
-            }];
-            [self presentAlertControllerWithTitle:@"抱歉" message:@"连接出错" preferredStyle:WKAlertControllerStyleAlert actions:@[action]];
+            static dispatch_once_t onceToken;
+            dispatch_once(&onceToken, ^{
+                WKAlertAction *action=[WKAlertAction actionWithTitle:@"好的" style:WKAlertActionStyleDefault handler:^{
+                    
+                }];
+                [self presentAlertControllerWithTitle:@"抱歉" message:@"连接出错" preferredStyle:WKAlertControllerStyleAlert actions:@[action]];
+            });
+            
         }
     }];
     //一定要加上这句，否则任务无法执行
