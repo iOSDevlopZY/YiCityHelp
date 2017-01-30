@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2029EA1DFE7D8500F315A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2029E91DFE7D8500F315A5 /* CoreLocation.framework */; };
+		0C2029EC1DFE7D8F00F315A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2029EB1DFE7D8F00F315A5 /* CoreLocation.framework */; };
+		0C347C941DFE54FE00FCDB08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347C931DFE54FE00FCDB08 /* main.m */; };
+		0C347C971DFE54FE00FCDB08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347C961DFE54FE00FCDB08 /* AppDelegate.m */; };
+		0C347C9A1DFE54FE00FCDB08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347C991DFE54FE00FCDB08 /* ViewController.m */; };
+		0C347C9D1DFE54FE00FCDB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C347C9B1DFE54FE00FCDB08 /* Main.storyboard */; };
+		0C347C9F1DFE54FE00FCDB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C347C9E1DFE54FE00FCDB08 /* Assets.xcassets */; };
+		0C347CA21DFE54FE00FCDB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C347CA01DFE54FE00FCDB08 /* LaunchScreen.storyboard */; };
+		0C347CAD1DFE54FE00FCDB08 /* YiCityHelpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347CAC1DFE54FE00FCDB08 /* YiCityHelpTests.m */; };
+		0C347CB81DFE54FE00FCDB08 /* YiCityHelpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347CB71DFE54FE00FCDB08 /* YiCityHelpUITests.m */; };
+		0C347CBD1DFE54FE00FCDB08 /* YiCityHelp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0C347CBC1DFE54FE00FCDB08 /* YiCityHelp WatchKit App.app */; };
+		0C347CC31DFE54FE00FCDB08 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C347CC11DFE54FE00FCDB08 /* Interface.storyboard */; };
+		0C347CC51DFE54FE00FCDB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C347CC41DFE54FE00FCDB08 /* Assets.xcassets */; };
+		0C347CCC1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C347CCB1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C347CD41DFE54FF00FCDB08 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347CD31DFE54FF00FCDB08 /* InterfaceController.m */; };
+		0C347CD71DFE54FF00FCDB08 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347CD61DFE54FF00FCDB08 /* ExtensionDelegate.m */; };
+		0C347CDA1DFE54FF00FCDB08 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347CD91DFE54FF00FCDB08 /* NotificationController.m */; };
+		0C347CDD1DFE54FF00FCDB08 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C347CDC1DFE54FF00FCDB08 /* ComplicationController.m */; };
+		0C347CDF1DFE54FF00FCDB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C347CDE1DFE54FF00FCDB08 /* Assets.xcassets */; };
+		0C5AF4771E0235BA00CB5E7E /* AirInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AF4761E0235BA00CB5E7E /* AirInterfaceController.m */; };
+		0C92C7C51DFFDC68008CFEE7 /* WaterInterfaceControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C92C7C41DFFDC68008CFEE7 /* WaterInterfaceControllerOne.m */; };
+		0C92C7C81DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C92C7C71DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.m */; };
+		0CE629CF1DFEC28300157656 /* WaterInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE629CE1DFEC28300157656 /* WaterInterfaceController.m */; };
+		0CEB40CB1E0638CA00E58688 /* WeatherInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB40CA1E0638CA00E58688 /* WeatherInterfaceController.m */; };
+		0CEB40CE1E063E7700E58688 /* FutureWeatherInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB40CD1E063E7700E58688 /* FutureWeatherInterfaceController.m */; };
+		0CEB40D11E063F8A00E58688 /* TableRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB40D01E063F8A00E58688 /* TableRowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C347CA91DFE54FE00FCDB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C347C871DFE54FE00FCDB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C347C8E1DFE54FE00FCDB08;
+			remoteInfo = YiCityHelp;
+		};
+		0C347CB41DFE54FE00FCDB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C347C871DFE54FE00FCDB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C347C8E1DFE54FE00FCDB08;
+			remoteInfo = YiCityHelp;
+		};
+		0C347CBE1DFE54FE00FCDB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C347C871DFE54FE00FCDB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C347CBB1DFE54FE00FCDB08;
+			remoteInfo = "YiCityHelp WatchKit App";
+		};
+		0C347CCD1DFE54FF00FCDB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C347C871DFE54FE00FCDB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C347CCA1DFE54FF00FCDB08;
+			remoteInfo = "YiCityHelp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C347CE61DFE54FF00FCDB08 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C347CCC1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CEA1DFE54FF00FCDB08 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0C347CBD1DFE54FE00FCDB08 /* YiCityHelp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C2029E91DFE7D8500F315A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		0C2029EB1DFE7D8F00F315A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0C347C8F1DFE54FE00FCDB08 /* YiCityHelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiCityHelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C347C931DFE54FE00FCDB08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C347C951DFE54FE00FCDB08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C347C961DFE54FE00FCDB08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C347C981DFE54FE00FCDB08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C347C991DFE54FE00FCDB08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C347C9C1DFE54FE00FCDB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C347C9E1DFE54FE00FCDB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C347CA11DFE54FE00FCDB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C347CA31DFE54FE00FCDB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C347CA81DFE54FE00FCDB08 /* YiCityHelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiCityHelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C347CAC1DFE54FE00FCDB08 /* YiCityHelpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiCityHelpTests.m; sourceTree = "<group>"; };
+		0C347CAE1DFE54FE00FCDB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C347CB31DFE54FE00FCDB08 /* YiCityHelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiCityHelpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C347CB71DFE54FE00FCDB08 /* YiCityHelpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiCityHelpUITests.m; sourceTree = "<group>"; };
+		0C347CB91DFE54FE00FCDB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C347CBC1DFE54FE00FCDB08 /* YiCityHelp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YiCityHelp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C347CC21DFE54FE00FCDB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0C347CC41DFE54FE00FCDB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C347CC61DFE54FE00FCDB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C347CCB1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YiCityHelp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C347CD11DFE54FF00FCDB08 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0C347CD21DFE54FF00FCDB08 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		0C347CD31DFE54FF00FCDB08 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		0C347CD51DFE54FF00FCDB08 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		0C347CD61DFE54FF00FCDB08 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		0C347CD81DFE54FF00FCDB08 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		0C347CD91DFE54FF00FCDB08 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		0C347CDB1DFE54FF00FCDB08 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		0C347CDC1DFE54FF00FCDB08 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		0C347CDE1DFE54FF00FCDB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C347CE01DFE54FF00FCDB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C5AF4751E0235BA00CB5E7E /* AirInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirInterfaceController.h; sourceTree = "<group>"; };
+		0C5AF4761E0235BA00CB5E7E /* AirInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirInterfaceController.m; sourceTree = "<group>"; };
+		0C92C7C31DFFDC68008CFEE7 /* WaterInterfaceControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterInterfaceControllerOne.h; sourceTree = "<group>"; };
+		0C92C7C41DFFDC68008CFEE7 /* WaterInterfaceControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterInterfaceControllerOne.m; sourceTree = "<group>"; };
+		0C92C7C61DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterInterfaceControllerTwo.h; sourceTree = "<group>"; };
+		0C92C7C71DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterInterfaceControllerTwo.m; sourceTree = "<group>"; };
+		0CD6200A1E0A7E3F00140E43 /* YiCityHelp WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "YiCityHelp WatchKit App.entitlements"; sourceTree = "<group>"; };
+		0CE629CD1DFEC28300157656 /* WaterInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterInterfaceController.h; sourceTree = "<group>"; };
+		0CE629CE1DFEC28300157656 /* WaterInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterInterfaceController.m; sourceTree = "<group>"; };
+		0CEB40C91E0638CA00E58688 /* WeatherInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInterfaceController.h; sourceTree = "<group>"; };
+		0CEB40CA1E0638CA00E58688 /* WeatherInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInterfaceController.m; sourceTree = "<group>"; };
+		0CEB40CC1E063E7700E58688 /* FutureWeatherInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FutureWeatherInterfaceController.h; sourceTree = "<group>"; };
+		0CEB40CD1E063E7700E58688 /* FutureWeatherInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FutureWeatherInterfaceController.m; sourceTree = "<group>"; };
+		0CEB40CF1E063F8A00E58688 /* TableRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowController.h; sourceTree = "<group>"; };
+		0CEB40D01E063F8A00E58688 /* TableRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C347C8C1DFE54FE00FCDB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2029EC1DFE7D8F00F315A5 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CA51DFE54FE00FCDB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CB01DFE54FE00FCDB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CC81DFE54FF00FCDB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2029EA1DFE7D8500F315A5 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2029E81DFE7D8500F315A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C2029EB1DFE7D8F00F315A5 /* CoreLocation.framework */,
+				0C2029E91DFE7D8500F315A5 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C347C861DFE54FE00FCDB08 = {
+			isa = PBXGroup;
+			children = (
+				0C347C911DFE54FE00FCDB08 /* YiCityHelp */,
+				0C347CAB1DFE54FE00FCDB08 /* YiCityHelpTests */,
+				0C347CB61DFE54FE00FCDB08 /* YiCityHelpUITests */,
+				0C347CC01DFE54FE00FCDB08 /* YiCityHelp WatchKit App */,
+				0C347CCF1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension */,
+				0C347C901DFE54FE00FCDB08 /* Products */,
+				0C2029E81DFE7D8500F315A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C347C901DFE54FE00FCDB08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C347C8F1DFE54FE00FCDB08 /* YiCityHelp.app */,
+				0C347CA81DFE54FE00FCDB08 /* YiCityHelpTests.xctest */,
+				0C347CB31DFE54FE00FCDB08 /* YiCityHelpUITests.xctest */,
+				0C347CBC1DFE54FE00FCDB08 /* YiCityHelp WatchKit App.app */,
+				0C347CCB1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C347C911DFE54FE00FCDB08 /* YiCityHelp */ = {
+			isa = PBXGroup;
+			children = (
+				0C347C951DFE54FE00FCDB08 /* AppDelegate.h */,
+				0C347C961DFE54FE00FCDB08 /* AppDelegate.m */,
+				0C347C981DFE54FE00FCDB08 /* ViewController.h */,
+				0C347C991DFE54FE00FCDB08 /* ViewController.m */,
+				0C347C9B1DFE54FE00FCDB08 /* Main.storyboard */,
+				0C347C9E1DFE54FE00FCDB08 /* Assets.xcassets */,
+				0C347CA01DFE54FE00FCDB08 /* LaunchScreen.storyboard */,
+				0C347CA31DFE54FE00FCDB08 /* Info.plist */,
+				0C347C921DFE54FE00FCDB08 /* Supporting Files */,
+			);
+			path = YiCityHelp;
+			sourceTree = "<group>";
+		};
+		0C347C921DFE54FE00FCDB08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C347C931DFE54FE00FCDB08 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C347CAB1DFE54FE00FCDB08 /* YiCityHelpTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C347CAC1DFE54FE00FCDB08 /* YiCityHelpTests.m */,
+				0C347CAE1DFE54FE00FCDB08 /* Info.plist */,
+			);
+			path = YiCityHelpTests;
+			sourceTree = "<group>";
+		};
+		0C347CB61DFE54FE00FCDB08 /* YiCityHelpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C347CB71DFE54FE00FCDB08 /* YiCityHelpUITests.m */,
+				0C347CB91DFE54FE00FCDB08 /* Info.plist */,
+			);
+			path = YiCityHelpUITests;
+			sourceTree = "<group>";
+		};
+		0C347CC01DFE54FE00FCDB08 /* YiCityHelp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6200A1E0A7E3F00140E43 /* YiCityHelp WatchKit App.entitlements */,
+				0C347CC11DFE54FE00FCDB08 /* Interface.storyboard */,
+				0C347CC41DFE54FE00FCDB08 /* Assets.xcassets */,
+				0C347CC61DFE54FE00FCDB08 /* Info.plist */,
+			);
+			path = "YiCityHelp WatchKit App";
+			sourceTree = "<group>";
+		};
+		0C347CCF1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C347CD21DFE54FF00FCDB08 /* InterfaceController.h */,
+				0C347CD31DFE54FF00FCDB08 /* InterfaceController.m */,
+				0C347CD51DFE54FF00FCDB08 /* ExtensionDelegate.h */,
+				0C347CD61DFE54FF00FCDB08 /* ExtensionDelegate.m */,
+				0C347CD81DFE54FF00FCDB08 /* NotificationController.h */,
+				0C347CD91DFE54FF00FCDB08 /* NotificationController.m */,
+				0C347CDB1DFE54FF00FCDB08 /* ComplicationController.h */,
+				0C347CDC1DFE54FF00FCDB08 /* ComplicationController.m */,
+				0CE629CD1DFEC28300157656 /* WaterInterfaceController.h */,
+				0CE629CE1DFEC28300157656 /* WaterInterfaceController.m */,
+				0C92C7C31DFFDC68008CFEE7 /* WaterInterfaceControllerOne.h */,
+				0C92C7C41DFFDC68008CFEE7 /* WaterInterfaceControllerOne.m */,
+				0C92C7C61DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.h */,
+				0C92C7C71DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.m */,
+				0C5AF4751E0235BA00CB5E7E /* AirInterfaceController.h */,
+				0C5AF4761E0235BA00CB5E7E /* AirInterfaceController.m */,
+				0CEB40C91E0638CA00E58688 /* WeatherInterfaceController.h */,
+				0CEB40CA1E0638CA00E58688 /* WeatherInterfaceController.m */,
+				0CEB40CC1E063E7700E58688 /* FutureWeatherInterfaceController.h */,
+				0CEB40CD1E063E7700E58688 /* FutureWeatherInterfaceController.m */,
+				0CEB40CF1E063F8A00E58688 /* TableRowController.h */,
+				0CEB40D01E063F8A00E58688 /* TableRowController.m */,
+				0C347CDE1DFE54FF00FCDB08 /* Assets.xcassets */,
+				0C347CE01DFE54FF00FCDB08 /* Info.plist */,
+				0C347CD01DFE54FF00FCDB08 /* Supporting Files */,
+			);
+			path = "YiCityHelp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0C347CD01DFE54FF00FCDB08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C347CD11DFE54FF00FCDB08 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C347C8E1DFE54FE00FCDB08 /* YiCityHelp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C347CEB1DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelp" */;
+			buildPhases = (
+				0C347C8B1DFE54FE00FCDB08 /* Sources */,
+				0C347C8C1DFE54FE00FCDB08 /* Frameworks */,
+				0C347C8D1DFE54FE00FCDB08 /* Resources */,
+				0C347CEA1DFE54FF00FCDB08 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C347CBF1DFE54FE00FCDB08 /* PBXTargetDependency */,
+			);
+			name = YiCityHelp;
+			productName = YiCityHelp;
+			productReference = 0C347C8F1DFE54FE00FCDB08 /* YiCityHelp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C347CA71DFE54FE00FCDB08 /* YiCityHelpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C347CEE1DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelpTests" */;
+			buildPhases = (
+				0C347CA41DFE54FE00FCDB08 /* Sources */,
+				0C347CA51DFE54FE00FCDB08 /* Frameworks */,
+				0C347CA61DFE54FE00FCDB08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C347CAA1DFE54FE00FCDB08 /* PBXTargetDependency */,
+			);
+			name = YiCityHelpTests;
+			productName = YiCityHelpTests;
+			productReference = 0C347CA81DFE54FE00FCDB08 /* YiCityHelpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C347CB21DFE54FE00FCDB08 /* YiCityHelpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C347CF11DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelpUITests" */;
+			buildPhases = (
+				0C347CAF1DFE54FE00FCDB08 /* Sources */,
+				0C347CB01DFE54FE00FCDB08 /* Frameworks */,
+				0C347CB11DFE54FE00FCDB08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C347CB51DFE54FE00FCDB08 /* PBXTargetDependency */,
+			);
+			name = YiCityHelpUITests;
+			productName = YiCityHelpUITests;
+			productReference = 0C347CB31DFE54FE00FCDB08 /* YiCityHelpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0C347CBB1DFE54FE00FCDB08 /* YiCityHelp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C347CE71DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelp WatchKit App" */;
+			buildPhases = (
+				0C347CBA1DFE54FE00FCDB08 /* Resources */,
+				0C347CE61DFE54FF00FCDB08 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C347CCE1DFE54FF00FCDB08 /* PBXTargetDependency */,
+			);
+			name = "YiCityHelp WatchKit App";
+			productName = "YiCityHelp WatchKit App";
+			productReference = 0C347CBC1DFE54FE00FCDB08 /* YiCityHelp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0C347CCA1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C347CE31DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelp WatchKit Extension" */;
+			buildPhases = (
+				0C347CC71DFE54FF00FCDB08 /* Sources */,
+				0C347CC81DFE54FF00FCDB08 /* Frameworks */,
+				0C347CC91DFE54FF00FCDB08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YiCityHelp WatchKit Extension";
+			productName = "YiCityHelp WatchKit Extension";
+			productReference = 0C347CCB1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C347C871DFE54FE00FCDB08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					0C347C8E1DFE54FE00FCDB08 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YZX9D3JF2R;
+						ProvisioningStyle = Automatic;
+					};
+					0C347CA71DFE54FE00FCDB08 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YZX9D3JF2R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C347C8E1DFE54FE00FCDB08;
+					};
+					0C347CB21DFE54FE00FCDB08 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YZX9D3JF2R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C347C8E1DFE54FE00FCDB08;
+					};
+					0C347CBB1DFE54FE00FCDB08 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YZX9D3JF2R;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 1;
+							};
+						};
+					};
+					0C347CCA1DFE54FF00FCDB08 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YZX9D3JF2R;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0C347C8A1DFE54FE00FCDB08 /* Build configuration list for PBXProject "YiCityHelp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C347C861DFE54FE00FCDB08;
+			productRefGroup = 0C347C901DFE54FE00FCDB08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C347C8E1DFE54FE00FCDB08 /* YiCityHelp */,
+				0C347CA71DFE54FE00FCDB08 /* YiCityHelpTests */,
+				0C347CB21DFE54FE00FCDB08 /* YiCityHelpUITests */,
+				0C347CBB1DFE54FE00FCDB08 /* YiCityHelp WatchKit App */,
+				0C347CCA1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C347C8D1DFE54FE00FCDB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347CA21DFE54FE00FCDB08 /* LaunchScreen.storyboard in Resources */,
+				0C347C9F1DFE54FE00FCDB08 /* Assets.xcassets in Resources */,
+				0C347C9D1DFE54FE00FCDB08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CA61DFE54FE00FCDB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CB11DFE54FE00FCDB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CBA1DFE54FE00FCDB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347CC51DFE54FE00FCDB08 /* Assets.xcassets in Resources */,
+				0C347CC31DFE54FE00FCDB08 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CC91DFE54FF00FCDB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347CDF1DFE54FF00FCDB08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C347C8B1DFE54FE00FCDB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347C9A1DFE54FE00FCDB08 /* ViewController.m in Sources */,
+				0C347C971DFE54FE00FCDB08 /* AppDelegate.m in Sources */,
+				0C347C941DFE54FE00FCDB08 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CA41DFE54FE00FCDB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347CAD1DFE54FE00FCDB08 /* YiCityHelpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CAF1DFE54FE00FCDB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347CB81DFE54FE00FCDB08 /* YiCityHelpUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C347CC71DFE54FF00FCDB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C347CD71DFE54FF00FCDB08 /* ExtensionDelegate.m in Sources */,
+				0CEB40CE1E063E7700E58688 /* FutureWeatherInterfaceController.m in Sources */,
+				0C347CDD1DFE54FF00FCDB08 /* ComplicationController.m in Sources */,
+				0CE629CF1DFEC28300157656 /* WaterInterfaceController.m in Sources */,
+				0C347CD41DFE54FF00FCDB08 /* InterfaceController.m in Sources */,
+				0CEB40CB1E0638CA00E58688 /* WeatherInterfaceController.m in Sources */,
+				0C5AF4771E0235BA00CB5E7E /* AirInterfaceController.m in Sources */,
+				0CEB40D11E063F8A00E58688 /* TableRowController.m in Sources */,
+				0C92C7C51DFFDC68008CFEE7 /* WaterInterfaceControllerOne.m in Sources */,
+				0C92C7C81DFFE64B008CFEE7 /* WaterInterfaceControllerTwo.m in Sources */,
+				0C347CDA1DFE54FF00FCDB08 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C347CAA1DFE54FE00FCDB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C347C8E1DFE54FE00FCDB08 /* YiCityHelp */;
+			targetProxy = 0C347CA91DFE54FE00FCDB08 /* PBXContainerItemProxy */;
+		};
+		0C347CB51DFE54FE00FCDB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C347C8E1DFE54FE00FCDB08 /* YiCityHelp */;
+			targetProxy = 0C347CB41DFE54FE00FCDB08 /* PBXContainerItemProxy */;
+		};
+		0C347CBF1DFE54FE00FCDB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C347CBB1DFE54FE00FCDB08 /* YiCityHelp WatchKit App */;
+			targetProxy = 0C347CBE1DFE54FE00FCDB08 /* PBXContainerItemProxy */;
+		};
+		0C347CCE1DFE54FF00FCDB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C347CCA1DFE54FF00FCDB08 /* YiCityHelp WatchKit Extension */;
+			targetProxy = 0C347CCD1DFE54FF00FCDB08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C347C9B1DFE54FE00FCDB08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C347C9C1DFE54FE00FCDB08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C347CA01DFE54FE00FCDB08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C347CA11DFE54FE00FCDB08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0C347CC11DFE54FE00FCDB08 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C347CC21DFE54FE00FCDB08 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C347CE11DFE54FF00FCDB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C347CE21DFE54FF00FCDB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C347CE41DFE54FF00FCDB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = "YiCityHelp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		0C347CE51DFE54FF00FCDB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = "YiCityHelp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		0C347CE81DFE54FF00FCDB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YiCityHelp WatchKit App/YiCityHelp WatchKit App.entitlements";
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				IBSC_MODULE = YiCityHelp_WatchKit_Extension;
+				INFOPLIST_FILE = "YiCityHelp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		0C347CE91DFE54FF00FCDB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YiCityHelp WatchKit App/YiCityHelp WatchKit App.entitlements";
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				IBSC_MODULE = YiCityHelp_WatchKit_Extension;
+				INFOPLIST_FILE = "YiCityHelp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		0C347CEC1DFE54FF00FCDB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = YiCityHelp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C347CED1DFE54FF00FCDB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = YiCityHelp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0C347CEF1DFE54FF00FCDB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = YiCityHelpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YiCityHelp.app/YiCityHelp";
+			};
+			name = Debug;
+		};
+		0C347CF01DFE54FF00FCDB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = YiCityHelpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YiCityHelp.app/YiCityHelp";
+			};
+			name = Release;
+		};
+		0C347CF21DFE54FF00FCDB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = YiCityHelpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YiCityHelp;
+			};
+			name = Debug;
+		};
+		0C347CF31DFE54FF00FCDB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YZX9D3JF2R;
+				INFOPLIST_FILE = YiCityHelpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YiCityHelpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YiCityHelp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C347C8A1DFE54FE00FCDB08 /* Build configuration list for PBXProject "YiCityHelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C347CE11DFE54FF00FCDB08 /* Debug */,
+				0C347CE21DFE54FF00FCDB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C347CE31DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C347CE41DFE54FF00FCDB08 /* Debug */,
+				0C347CE51DFE54FF00FCDB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C347CE71DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C347CE81DFE54FF00FCDB08 /* Debug */,
+				0C347CE91DFE54FF00FCDB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C347CEB1DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C347CEC1DFE54FF00FCDB08 /* Debug */,
+				0C347CED1DFE54FF00FCDB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C347CEE1DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C347CEF1DFE54FF00FCDB08 /* Debug */,
+				0C347CF01DFE54FF00FCDB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C347CF11DFE54FF00FCDB08 /* Build configuration list for PBXNativeTarget "YiCityHelpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C347CF21DFE54FF00FCDB08 /* Debug */,
+				0C347CF31DFE54FF00FCDB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C347C871DFE54FE00FCDB08 /* Project object */;
+}

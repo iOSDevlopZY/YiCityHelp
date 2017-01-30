@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12100" systemVersion="16E144f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12026"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="VuT-D8-8me">
+                            <items>
+                                <label width="91" alignment="left" verticalAlignment="center" text="您当前输入城市：" id="sEB-Lc-SdO">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="40" height="20" alignment="left" text="无" textAlignment="right" id="tAN-6v-1W4">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="18" alignment="left" id="0CO-Db-z5a">
+                            <items>
+                                <label alignment="left" text="时间：" id="Q28-8e-L7x">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <dateLabel width="97" alignment="left" verticalAlignment="center" textAlignment="right" format="M/d/yyyy, h:mm a" id="9Sm-R3-MW3">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="8"/>
+                                    <date key="previewedDate" timeIntervalSinceReferenceDate="495133740">
+                                        <!--2016-09-09 17:09:00 +0000-->
+                                    </date>
+                                </dateLabel>
+                            </items>
+                        </group>
+                        <button width="1" height="19" alignment="left" title="语音输入城市" id="y4V-de-weS">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="speak" destination="AgC-eL-Hgc" id="zIM-zi-44h"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="wAC-Qa-rb4">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="136" alignment="left" text="您可以查看城市以下信息" textAlignment="center" id="PGY-SD-8Nn">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <button width="1" alignment="left" title="天气预报" id="RJs-Na-Rd9">
+                            <connections>
+                                <segue destination="M7L-T6-PTh" kind="push" identifier="WeatherReport" id="i0f-UP-b4m"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="水质量" id="Tq7-JZ-5C4">
+                            <connections>
+                                <segue destination="Qiz-Pr-4xD" kind="modal" identifier="Water" id="8ZA-uw-1xr"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="空气质量" id="2G7-dp-GGh">
+                            <connections>
+                                <segue destination="2cZ-Kz-4lI" kind="push" identifier="Air" id="Bvn-m2-bWI"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="locCityLabel" destination="tAN-6v-1W4" id="OEy-rl-aoh"/>
+                        <outlet property="timeAndDate" destination="9Sm-R3-MW3" id="66i-5W-en3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="190" y="80.5"/>
+        </scene>
+        <!--Weather Interface Controller-->
+        <scene sceneID="bti-bZ-fSQ">
+            <objects>
+                <controller id="M7L-T6-PTh" customClass="WeatherInterfaceController">
+                    <items>
+                        <button width="67" height="67" alignment="center" backgroundImage="Weather" id="P0V-pM-ouO">
+                            <connections>
+                                <segue destination="x3S-PP-0xe" kind="push" identifier="FutureWeather" id="MsZ-vH-bwo"/>
+                            </connections>
+                        </button>
+                        <label width="135" alignment="left" text="实时天气" textAlignment="center" id="Sqq-Z6-YiI">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <group width="1" height="19" alignment="left" id="G24-Lk-rrx">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="更新于" id="aBd-0I-DQf">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="00：00" textAlignment="right" id="bZZ-kX-huj">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="DVM-xf-ho2">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="19" alignment="left" id="z89-kQ-IAX">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="温度" id="j5y-Cw-h1Q">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="0℃" textAlignment="right" id="JVe-d2-dsW">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="Fn8-Fd-Ugx">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="19" alignment="left" id="M66-p5-x1R">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="风向" id="C3q-oS-ioX">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="Fb7-0E-TWI">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="WgX-1z-PXj">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="19" alignment="left" id="y2u-PL-2Cq">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="风速" id="pqR-Xx-Lt9">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="0级" textAlignment="right" id="LMC-Nb-Zef">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="8fN-Dj-fHY">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="19" alignment="left" id="J1j-bB-pad">
+                            <items>
+                                <label width="49" alignment="left" verticalAlignment="center" text="空气湿度" id="qyQ-mW-wOx">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="84" alignment="right" verticalAlignment="center" text="0%" textAlignment="right" id="6Xa-de-hrb">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="humidityLabel" destination="6Xa-de-hrb" id="0Oq-Pc-mUb"/>
+                        <outlet property="tempLabel" destination="JVe-d2-dsW" id="xUf-SB-OsD"/>
+                        <outlet property="updateTimeLabel" destination="bZZ-kX-huj" id="o8z-WB-pvT"/>
+                        <outlet property="weatherDirLabel" destination="Fb7-0E-TWI" id="anR-iz-XLV"/>
+                        <outlet property="weatherSpeedLabel" destination="LMC-Nb-Zef" id="ewx-fP-ROj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="446" y="-240"/>
+        </scene>
+        <!--Future Weather Interface Controller-->
+        <scene sceneID="zX1-hI-zcC">
+            <objects>
+                <controller id="x3S-PP-0xe" customClass="FutureWeatherInterfaceController">
+                    <items>
+                        <table alignment="left" id="BfS-kZ-cOw">
+                            <items>
+                                <tableRow identifier="1" id="nas-WX-53J" customClass="TableRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="LsT-Fz-pH4">
+                                        <items>
+                                            <label width="31" height="26" alignment="left" verticalAlignment="center" text="星期一" id="PQX-kI-xUb">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                            <label width="35" alignment="left" verticalAlignment="center" text="无" textAlignment="center" id="CIY-Tx-Z1F">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                            <label width="55" alignment="right" verticalAlignment="center" text="0℃~0℃" textAlignment="right" id="WSg-Gg-TFi">
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="tempLabel" destination="WSg-Gg-TFi" id="odg-eC-ksQ"/>
+                                        <outlet property="weatherLabel" destination="CIY-Tx-Z1F" id="Lg1-sA-nc7"/>
+                                        <outlet property="weekLabel" destination="PQX-kI-xUb" id="Jjz-fS-Ko6"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="BfS-kZ-cOw" id="SAe-No-1Bl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="698" y="-265"/>
+        </scene>
+        <!--Water Interface Controller-->
+        <scene sceneID="QAN-Dk-sGB">
+            <objects>
+                <controller id="Qiz-Pr-4xD" customClass="WaterInterfaceController">
+                    <items>
+                        <imageView width="136" height="60" alignment="left" image="PH" contentMode="scaleAspectFit" id="5eM-V7-vpc"/>
+                        <group width="1" height="19" alignment="left" id="NH8-Hy-lSA">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="更新于" id="Mcj-S3-IeZ">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="00：00：00" textAlignment="right" id="DKk-Yw-Me0">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="IAb-22-Pck">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="9Nk-r6-hGH">
+                            <items>
+                                <label width="101" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="k4K-Qe-pl4">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="PH值" id="dtj-0l-GhA">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="28j-Gx-vQB">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="GFO-yr-0P8">
+                            <items>
+                                <label width="66" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="MO0-Qo-m1b">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="PH水质类别" id="hUL-Pn-4qQ">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="PHLabel" destination="k4K-Qe-pl4" id="cdD-FR-Tws"/>
+                        <outlet property="PHWaterLabel" destination="MO0-Qo-m1b" id="E2z-Kl-WjL"/>
+                        <outlet property="refreshTimeLabe" destination="DKk-Yw-Me0" id="QEO-tl-PD1"/>
+                        <segue destination="CwV-Tr-3SV" kind="relationship" relationship="nextPage" id="eKp-Po-E2Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="446" y="76"/>
+        </scene>
+        <!--Air Interface Controller-->
+        <scene sceneID="sTx-fH-R6I">
+            <objects>
+                <controller id="2cZ-Kz-4lI" customClass="AirInterfaceController">
+                    <items>
+                        <imageView alignment="left" image="AQI" contentMode="scaleAspectFill" id="XBh-Mo-U2H"/>
+                        <group width="1" height="19" alignment="left" id="vcd-QV-5fF">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="更新于" id="Vms-Mc-Kny">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="1970-00-00 00：00：00" textAlignment="right" id="f5A-is-0SD">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="7"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="cog-yx-4rW">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="19" alignment="left" id="i7u-02-emv">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="城市" id="O5x-Co-XKj">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="tJu-X0-ULk">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="kAT-0w-QFr">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="19" alignment="left" id="pPY-Vm-MQX">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="AQI" id="ihV-rs-trf">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="ubP-E0-NEw">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="GGF-vh-qxW">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="134" height="19" alignment="left" id="kEf-qr-K4Q">
+                            <items>
+                                <label width="50" alignment="left" verticalAlignment="center" text="空气质量" id="fPv-TE-RYP">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="81" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="T0Q-2D-iuu">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="AQILabel" destination="ubP-E0-NEw" id="8jk-Xf-f4p"/>
+                        <outlet property="airQualityLabel" destination="T0Q-2D-iuu" id="EVk-Kt-sBy"/>
+                        <outlet property="cityLabel" destination="tJu-X0-ULk" id="Mps-e4-ucG"/>
+                        <outlet property="updateTimeLabel" destination="f5A-is-0SD" id="5Ek-Gd-HIz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="446" y="409.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="136" alignment="left" text="Alert Label" textAlignment="center" id="IdU-wH-bcW">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="215" y="683"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <items>
+                        <label width="136" alignment="left" text="数据已更新" textAlignment="center" id="bcc-bj-twr">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="bcc-bj-twr" id="nFp-QQ-Mea"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="683"/>
+        </scene>
+        <!--Water Interface Controller One-->
+        <scene sceneID="m0o-0N-ulB">
+            <objects>
+                <controller id="CwV-Tr-3SV" customClass="WaterInterfaceControllerOne">
+                    <items>
+                        <imageView width="136" height="60" alignment="left" image="GMSJ" contentMode="scaleAspectFit" id="q4C-YO-19S"/>
+                        <group width="1" height="19" alignment="left" id="K1O-fA-NW9">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="更新于" id="aNW-TT-yfP">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="00：00：00" textAlignment="right" id="FAN-Fw-RDF">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="EAg-XI-rtu">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="0Bd-HZ-Pbn">
+                            <items>
+                                <label width="62" alignment="left" verticalAlignment="center" text="高锰酸钾值" id="7tT-Lv-q5o">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="70" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="59q-G7-6r9">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="pT0-2I-MdZ">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="kul-Zf-uoy">
+                            <items>
+                                <label width="37" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="Qjy-bk-Liv">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                                <label width="96" alignment="left" verticalAlignment="center" text="高锰酸钾水质类别" id="riQ-v0-xjN">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="GMSJLabel" destination="59q-G7-6r9" id="O89-hT-OjI"/>
+                        <outlet property="GMSJWaterLabel" destination="Qjy-bk-Liv" id="1aQ-yt-WLI"/>
+                        <outlet property="updateLabel" destination="FAN-Fw-RDF" id="0wT-Iy-53d"/>
+                        <segue destination="KDz-5o-BDP" kind="relationship" relationship="nextPage" id="IT7-sv-eSh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="713" y="76"/>
+        </scene>
+        <!--Water Interface Controller Two-->
+        <scene sceneID="o0c-1X-CIo">
+            <objects>
+                <controller id="KDz-5o-BDP" customClass="WaterInterfaceControllerTwo">
+                    <items>
+                        <imageView width="136" height="60" alignment="left" image="oxygen" contentMode="scaleAspectFit" id="1aF-LI-SeV"/>
+                        <group width="1" height="19" alignment="left" id="5xq-zw-HMB">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="更新于" id="a8D-Bh-hSz">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="90" alignment="right" verticalAlignment="center" text="00：00：00" textAlignment="right" id="kCY-yo-1M2">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="O54-1q-Ma6">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="gZz-VS-7aB">
+                            <items>
+                                <label width="62" alignment="left" verticalAlignment="center" text="溶解氧值" id="dgG-FC-WKm">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="70" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="HDQ-N0-zWW">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="m2Z-5a-Ogi">
+                            <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="n8e-uM-VIg">
+                            <items>
+                                <label width="37" alignment="right" verticalAlignment="center" text="无" textAlignment="right" id="YgP-lO-Ml7">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                                <label width="96" alignment="left" verticalAlignment="center" text="溶解氧水质类别" id="Sse-Xx-XJJ">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="oxygenLabel" destination="HDQ-N0-zWW" id="NG6-A7-0fY"/>
+                        <outlet property="oxygenWaterLabel" destination="YgP-lO-Ml7" id="vQd-PV-Qqg"/>
+                        <outlet property="updateLabel" destination="kCY-yo-1M2" id="8kX-l1-rmF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="995" y="76"/>
+        </scene>
+    </scenes>
+</document>
