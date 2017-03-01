@@ -50,7 +50,6 @@
      urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:set];
     
     NSURL *url=[NSURL URLWithString:urlStr];
-    NSLog(@">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%@",url);
     NSURLSessionDataTask *dataTask=[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         NSArray *riverArr=dict[@"result"];
