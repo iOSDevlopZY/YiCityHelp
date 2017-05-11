@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.mac.YiCityHelp</string>
+	<string>com.medcare.YiCityHelp</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
