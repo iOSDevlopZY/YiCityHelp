@@ -47,7 +47,7 @@
     NSString *urlStr=[NSString stringWithFormat:@"http://web.juhe.cn:8080/environment/water/river?river=黄河流域&key=8561731ffcb78be580514307ab85370f"];
     //避免中文问题
     NSCharacterSet *set=[NSCharacterSet characterSetWithCharactersInString:urlStr];
-     urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:set];
+    urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:set];
     
     NSURL *url=[NSURL URLWithString:urlStr];
     NSURLSessionDataTask *dataTask=[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
