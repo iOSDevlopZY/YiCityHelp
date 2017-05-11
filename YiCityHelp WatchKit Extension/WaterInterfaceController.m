@@ -76,8 +76,7 @@
                 }];
                 NSString *error=[NSString stringWithFormat:@"错误代码：%@",dict[@"reason"]];
                 [self presentAlertControllerWithTitle:@"抱歉" message:error preferredStyle:WKAlertControllerStyleAlert actions:@[action]];
-            });
-            
+            }); 
         }
         }
         else
