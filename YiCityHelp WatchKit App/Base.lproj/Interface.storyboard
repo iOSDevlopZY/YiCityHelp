@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12100" systemVersion="16E144f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16F71b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12026"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -45,6 +45,12 @@
                                 <action selector="speak" destination="AgC-eL-Hgc" id="zIM-zi-44h"/>
                             </connections>
                         </button>
+                        <button width="1" height="19" alignment="left" title="手写输入城市" id="jfK-fu-xiv">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="handWrite" destination="AgC-eL-Hgc" id="9en-WF-81r"/>
+                            </connections>
+                        </button>
                         <separator alignment="left" id="wAC-Qa-rb4">
                             <color key="color" red="0.81341211930000001" green="0.81341211930000001" blue="0.81341211930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </separator>
@@ -73,7 +79,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="190" y="80.5"/>
+            <point key="canvasLocation" x="190" y="70.5"/>
         </scene>
         <!--Weather Interface Controller-->
         <scene sceneID="bti-bZ-fSQ">
