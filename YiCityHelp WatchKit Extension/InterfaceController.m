@@ -48,7 +48,8 @@
 }
 #pragma mark -手写输入城市
 - (IBAction)handWrite {
-    [self presentTextInputControllerWithSuggestions:nil allowedInputMode:WKTextInputModeAllowEmoji completion:^(NSArray * _Nullable results) {
+    
+    [self presentTextInputControllerWithSuggestions:nil allowedInputMode:WKTextInputModeAllowAnimatedEmoji completion:^(NSArray * _Nullable results) {
         //返回结果
         self.locCity=[results objectAtIndex:0];
         [self.locCityLabel setText:self.locCity];
